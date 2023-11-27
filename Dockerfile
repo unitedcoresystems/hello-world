@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Feng Honglin <hfeng@tutum.co>
+MAINTAINER United Core System <unitedcoresystems.com>
 
 RUN apt-get update && \
     apt-get install -y nginx && \

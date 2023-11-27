@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Hello world!</title>
+    <title>United Core - Hello world!</title>
     <style>
     body {
         background-color: white;
@@ -15,7 +16,28 @@
     </style>
 </head>
 <body>
-    <a href="http://tutum.co/"><img id="logo" src="logo.png" /></a>
+    <a href="http://unitedcoresystems.com/"><img id="logo" src="logo.png" /></a>
     <h1>Hello world!</h1>
+    <h1>My Server Host Name is : <span id="host-name"></span></h1>
+
+    <!-- Added elements for version information -->
+    <p>Version A: <span id="version-a"></span></p>
+
+    <script>
+        // Existing script to display hostname
+        document.getElementById('host-name').textContent = window.location.hostname;
+
+        // Script to display version information
+        function displayVersions() {
+            // Example version information
+            const versionA = '1.0.0';
+            const versionB = '1.1.0';
+
+            document.getElementById('version-a').textContent = versionA;
+            document.getElementById('version-b').textContent = versionB;
+        }
+
+        displayVersions();
+    </script>
 </body>
 </html>
